@@ -75,3 +75,9 @@ background-color: #9ACD32;
 .bad{
     background-color:red;
 }
+.float-right{
+    float: right;
+}
+.margin-right{
+    margin-right: 10px;
+}
