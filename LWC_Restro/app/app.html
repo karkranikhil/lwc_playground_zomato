@@ -1,0 +1,51 @@
+<template>
+ <div class="main-wrapper">  
+    <c-header></c-header>       
+	<div class="jumbotron jumbotron-billboard text-center">
+		<div class="img"></div>
+		<div class="container pt">
+			<div class="white-color">
+				<h1>Discover & Book</h1>
+			</div>
+			<div class="slds-grid slds-gutters slds-wrap searchBox">
+					<div class="slds-col slds-size_5-of-12">
+						<lightning-combobox
+							name="city_dropdown"
+							dropdown-alignment="left"
+							label=""
+							value={city}
+							placeholder="Select Your city"
+							options={options}
+							onchange={cityChangeHandler}
+							variant="label-hidden"
+							class="text-left"
+						></lightning-combobox>
+					</div>
+					
+					<div class="slds-col slds-size_5-of-12">
+						<lightning-input 
+						type="text" 
+						value={searchValue}
+						placeholder="Search Restaurant By Name"
+						label="Search for Restaurant"
+						variant="label-hidden"
+						onclick={searchValueHandler}
+						onkeyup={searchValueHandler}></lightning-input>
+					</div>
+					<div class="slds-col slds-size_2-of-12">
+						<lightning-button 
+						variant="success"
+						label="Search"
+						title="Search action"
+						onclick={searchBtnHandler}
+						class="slds-m-left_x-small white-color width100"></lightning-button>
+					</div>
+
+			</div>
+		</div>
+	</div>
+	<template if:true={restroDetailsLength}>
+	<c-restro-list restro-details={restroDetails}></c-restro-list>
+	</template>
+ </div>
+</template>

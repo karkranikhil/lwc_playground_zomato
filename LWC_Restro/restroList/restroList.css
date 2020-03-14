@@ -1,0 +1,77 @@
+.wrapper{
+    padding: 1rem;
+      padding-top: calc(100vh - 350px);
+}
+.wrapper-card {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #F5F5F5;
+    margin: 1rem;
+}
+.img-rounded {
+    border-radius: 6px;
+}
+.rating {
+    float: right;
+    margin-right: 15px;
+}
+.text-info {
+    color: #31708f;
+}
+.resimg {
+    float: left;
+    margin-right: 15px;
+}
+a.action_link {
+    text-decoration: none;
+}
+.text-primary {
+    color: #337ab7;
+}
+h6{
+    color: grey;
+}
+h2{
+    font-size: 1rem;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.rating{
+    color:white;
+    border-radius:4px;
+    border:none;
+    padding: 4px 20px;
+    margin: 0;
+    text-align: center;
+    text-decoration:none;
+    display:inline-block;
+    font-size:16px;
+    float:right;
+}
+.excellent{
+ background-color:#3F7E00;
+}
+.very_good{
+background-color:#3F7E00;
+}
+.poor{
+        background-color: #FF7800;
+}
+.average{
+    background-color: #CDD614;
+}
+.good{
+background-color: #9ACD32;
+}
+.not-rated{
+    background-color: #CBCBCB;
+}
+.bad{
+    background-color:red;
+}

@@ -1,0 +1,43 @@
+<template>
+    <div class="wrapper">
+        <template for:each={restroDetails}  for:item="item">
+        <div class="wrapper-card img-rounded" key={item.id}>
+            <div class="rating">
+                <span title={item.user_rating.rating_text}>
+                    <p class={item.rating_class}>
+                        <strong>{item.user_rating.aggregate_rating}</strong>
+                        </p>
+                    </span>
+                    <br>  
+                    <strong class="text-info">{item.user_rating.votes} votes</strong>
+                </div>
+            <img class="resimg img-rounded" src={item.thumb} alt="Restaurant Image" height="185" width="185">
+            <a href={item.url} target="_blank" class="action_link">
+            <h2 style="color:red;">
+                <strong>{item.name}</strong>
+            </h2>
+            </a> 
+            <strong class="text-primary">{item.location.locality}</strong>
+            <br> 
+            <h6 style="color:grey;">
+                <strong>{item.location.address}</strong>
+            </h6>
+            <hr>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_8-of-12">
+                    <strong>CUISINES</strong>:{item.cuisines}<br> 
+                    <strong>COST FOR TWO</strong>: {item.currency}{item.average_cost_for_two}<br>
+                </div>
+                <div class="slds-col slds-size_4-of-12">
+                     <a href={item.menu_url} class="slds-button slds-button_destructive" target="_blank">See Menu</a>
+                     <a href={item.url} class="slds-button slds-button_brand" target="_blank">Book now</a>
+                    
+                </div>
+            </div>
+            
+             
+        </div>
+        
+        </template>
+    </div>
+</template>
