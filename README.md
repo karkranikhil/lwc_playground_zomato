@@ -7,8 +7,8 @@ This app is build in the salesforce playground.
 
 ### Main page
 
-<img srsc="https://raw.githubusercontent.com/karkranikhil/lwc_playground_zomato/master/main_page.PNG"/>
+<img src="https://raw.githubusercontent.com/karkranikhil/lwc_playground_zomato/master/main_page.PNG"/>
 
 ### List result
 
-<img srsc="https://raw.githubusercontent.com/karkranikhil/lwc_playground_zomato/master/restro_list.PNG"/>
+<img src="https://raw.githubusercontent.com/karkranikhil/lwc_playground_zomato/master/restro_list.PNG"/>
